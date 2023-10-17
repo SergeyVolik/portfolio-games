@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
@@ -129,8 +130,7 @@ namespace Unity.Physics.Stateful
 
             public void Execute(CollisionEvent collisionEvent)
             {
-                var statefulCollisionEvent = new StatefulCollisionEvent(collisionEvent);
-
+                var statefulCollisionEvent = new StatefulCollisionEvent(collisionEvent);              
                 // Check if we should calculate the collision details
                 bool calculateDetails = ForceCalculateDetails;
                 if (!calculateDetails && EventDetails.HasComponent(collisionEvent.EntityA))

@@ -9,20 +9,24 @@ namespace Unity.Physics.Stateful
     // CharacterController on its own, without StatefulTriggerEventBufferSystem interference.
     public struct StatefulTriggerEventExclude : IComponentData {}
 
+    [RequireComponent(typeof(HasPhysicsEventsAuthoring))]
     public class StatefulTriggerEventBufferAuthoring : MonoBehaviour
     {
+        private void OnEnable()
+        {
+            
+        }
     }
 
     class StatefulTriggerEventBufferAuthoringBaker : Baker<StatefulTriggerEventBufferAuthoring>
     {
+         
         public override void Bake(StatefulTriggerEventBufferAuthoring authoring)
         {
             if (!authoring.enabled)
                 return;
             var entity = GetEntity(TransformUsageFlags.Dynamic);
             AddBuffer<StatefulTriggerEvent>(entity);
-            AddComponent<HasPhysicsEvents>(entity);
-            SetComponentEnabled<HasPhysicsEvents>(entity, false);
         }
     }
 }

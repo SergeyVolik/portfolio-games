@@ -78,9 +78,7 @@ namespace Unity.Physics.Stateful
         public void OnUpdate(ref SystemState state)
         {
             m_Handles.Update(ref state);
-
-
-
+ 
             state.Dependency = new ClearCollisionEventDynamicBufferJob
             {
 

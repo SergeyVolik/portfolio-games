@@ -8,16 +8,18 @@ namespace Unity.Physics.Stateful
         public bool CalculateDetails;
     }
 
-    public struct HasPhysicsEvents : IComponentData, IEnableableComponent
-    {
-       
-    }
+    
 
+    [RequireComponent(typeof(HasPhysicsEventsAuthoring))]
     public class StatefulCollisionEventBufferAuthoring : MonoBehaviour
     {
         [Tooltip("If selected, the details will be calculated in collision event dynamic buffer of this entity")]
         public bool CalculateDetails = false;
 
+        private void OnEnable()
+        {
+            
+        }
         class StatefulCollisionEventBufferBaker : Baker<StatefulCollisionEventBufferAuthoring>
         {
             public override void Bake(StatefulCollisionEventBufferAuthoring authoring)
@@ -34,8 +36,6 @@ namespace Unity.Physics.Stateful
                 }
 
                 AddBuffer<StatefulCollisionEvent>(entity);
-                AddComponent<HasPhysicsEvents>(entity);
-                SetComponentEnabled<HasPhysicsEvents>(entity, false);
             }
         }
     }
