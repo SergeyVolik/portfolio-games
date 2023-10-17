@@ -1,5 +1,15 @@
 {
   "dependencies": {
+    "com.dots.dispatcher": {
+      "version": "git@github.com:116370/com.dots.dispatcher.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.entities": "1.0.16",
+        "com.unity.burst": "1.8.8"
+      },
+      "hash": "25119231569069214d35761668b3e7a536a67c1b"
+    },
     "com.unity.burst": {
       "version": "1.8.8",
       "depth": 1,

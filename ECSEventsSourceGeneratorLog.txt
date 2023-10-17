@@ -1,0 +1,2916 @@
+[10/17/2023 19:16] Initialize ECSEventsSourceGenerator DefaultDomain
+
+[10/17/2023 19:16] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:16] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:16] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:16] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:16] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:16] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:16] try generated SendDamageB clenup system
+
+[10/17/2023 19:16] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:16] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:16] try generated DeadEventC clenup system
+
+[10/17/2023 19:16] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:16] try generated HealthRegenC clenup system
+
+[10/17/2023 19:16] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:16] try generated HasFullHpT clenup system
+
+[10/17/2023 19:16] try generated HealthC clenup system
+
+[10/17/2023 19:16] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:16] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:16] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:16] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:16] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Initialize ECSEventsSourceGenerator DefaultDomain
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Initialize ECSEventsSourceGenerator DefaultDomain
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Initialize ECSEventsSourceGenerator DefaultDomain
+
+[10/17/2023 19:17] Aseembly DOTS.Dispatcher.Runtime
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated EventCommandBuffer clenup system
+
+[10/17/2023 19:17] try generated ParallelWriter clenup system
+
+[10/17/2023 19:17] try generated Singleton clenup system
+
+[10/17/2023 19:17] try generated DisaptcherClenupDestroy clenup system
+
+[10/17/2023 19:17] try generated DispatcherCleanUpSystem clenup system
+
+[10/17/2023 19:17] try generated CleanUpJob clenup system
+
+[10/17/2023 19:17] try generated CleanUpJob clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:17] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:17] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:17] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:17] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:17] try generated SendDamageB clenup system
+
+[10/17/2023 19:17] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:17] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:17] try generated DeadEventC clenup system
+
+[10/17/2023 19:17] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:17] try generated HealthRegenC clenup system
+
+[10/17/2023 19:17] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:17] try generated HasFullHpT clenup system
+
+[10/17/2023 19:17] try generated HealthC clenup system
+
+[10/17/2023 19:17] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:17] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:17] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:17] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
+[10/17/2023 19:18] Aseembly Prototype.HealthSystem
+
+[10/17/2023 19:18] =========ECSEventsSourceGenerator.Execute=======
+
+[10/17/2023 19:18] try generated UpdateFullHpFlagSystem clenup system
+
+[10/17/2023 19:18] try generated IsDeadTagC clenup system
+
+[10/17/2023 19:18] try generated SendDamageB clenup system
+
+[10/17/2023 19:18] was generated CleanUpBufferSendDamageBSystem.g.cs generated
+
+[10/17/2023 19:18] try generated ReceiveDamageB clenup system
+
+[10/17/2023 19:18] try generated DeadEventC clenup system
+
+[10/17/2023 19:18] was generated CleanUpComponentDeadEventCSystem.g.cs generated
+
+[10/17/2023 19:18] try generated HealthRegenC clenup system
+
+[10/17/2023 19:18] try generated HealthRegenProcessingC clenup system
+
+[10/17/2023 19:18] try generated HasFullHpT clenup system
+
+[10/17/2023 19:18] try generated HealthC clenup system
+
+[10/17/2023 19:18] try generated UpdateDeadFlagSystem clenup system
+
+[10/17/2023 19:18] try generated HpRegenSystem clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeath clenup system
+
+[10/17/2023 19:18] try generated DestroyAfterDeathSystem clenup system
+
+[10/17/2023 19:18] ================================================
+
