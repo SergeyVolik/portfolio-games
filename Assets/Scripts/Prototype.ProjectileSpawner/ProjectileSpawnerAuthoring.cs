@@ -39,6 +39,8 @@ namespace Prototype.ECS.Runtime
         public int projectiles;
         public Entity projectileSpawnPoint;
         public float speed;
+        public int damage;
+
         public SpawnProjectileMoveType spawnType;
         public float angleOffset;
         public float projectileOffset;
@@ -66,6 +68,7 @@ namespace Prototype.ECS.Baking
         public float delayBetweenShots;
         public float projectileSpeed;
         public bool twoDimMode;
+        public int damage;
 
 
         [Min(1)]
@@ -86,6 +89,7 @@ namespace Prototype.ECS.Baking
         [ShowIf("@this.delayType == SpawnDelayType.Burst")]
         public int burstSpawns = 2;
 
+        public bool ativeAtStart = false;
         void OnEnable() { }
         class Baker : Baker<ProjectileSpawnerAuthoring>
         {
@@ -107,9 +111,10 @@ namespace Prototype.ECS.Baking
                     angleOffset = authoring.angleOffset,
                     projectileOffset = authoring.projectileOffset,
                     twoDimMode = authoring.twoDimMode,
+                    damage = authoring.damage,
                 });
 
-                SetComponentEnabled<ProjectileSpawnerC>(entity, false);
+                SetComponentEnabled<ProjectileSpawnerC>(entity, authoring.ativeAtStart);
 
                 AddComponent<AutoSpawnC>(entity);
                 SetComponentEnabled<AutoSpawnC>(entity, false);

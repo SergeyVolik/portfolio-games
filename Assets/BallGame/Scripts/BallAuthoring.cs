@@ -8,7 +8,8 @@ namespace SV.BallGame
     [DisallowMultipleComponent]
     public class BallAuthoring : MonoBehaviour
     {
-
+        public float force = 10;
+        public int damage = 10;
         void OnEnable() { }
 
         class Baker : Baker<BallAuthoring>
@@ -20,7 +21,11 @@ namespace SV.BallGame
 
                 var entity = GetEntity(TransformUsageFlags.None);
 
-                AddComponent(entity, new BallDataC { });
+                AddComponent(entity, new BallDataC
+                {
+                    damage = authoring.damage,
+                    force = authoring.force
+                });
             }
         }
     }

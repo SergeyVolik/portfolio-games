@@ -8,12 +8,12 @@ using Unity.Burst;
 namespace Prototype.ECS.Runtime
 {
     public partial struct ProjectileSpawnerSystem : ISystem
-    {       
+    {
         public void OnCreate(ref SystemState state)
         {
             state.RequireForUpdate<ProjectileSpawnerC>();
         }
-        
+
         public void OnUpdate(ref SystemState state)
         {
             var ecb = SystemAPI.GetSingleton<BeginSimulationEntityCommandBufferSystem.Singleton>().CreateCommandBuffer(state.WorldUnmanaged);
@@ -48,7 +48,7 @@ namespace Prototype.ECS.Runtime
         [BurstCompile]
         private void AutoSpawner(ref SystemState state, EntityCommandBuffer ecb)
         {
-          
+
             foreach (var (gun, e) in SystemAPI.Query<ProjectileSpawnerC>().WithNone<CooldownC>().WithAll<AutoSpawnC>().WithEntityAccess())
             {
                 ecb.AddComponentAndEnable(e, new CooldownC
@@ -57,7 +57,7 @@ namespace Prototype.ECS.Runtime
                     duration = gun.delayBetweenShots,
                 });
 
-                SpawnProjectile(ref state,ecb, gun, e);
+                SpawnProjectile(ref state, ecb, gun, e);
 
             }
         }
@@ -65,7 +65,7 @@ namespace Prototype.ECS.Runtime
         [BurstCompile]
         private void BurstSpawner(ref SystemState state, EntityCommandBuffer ecb)
         {
-            foreach (var (gun, burstSpawnRef,e) in SystemAPI.Query<ProjectileSpawnerC, RefRW<BurstSpawnC>>().WithNone<CooldownC>().WithAll<BurstSpawnC>().WithEntityAccess())
+            foreach (var (gun, burstSpawnRef, e) in SystemAPI.Query<ProjectileSpawnerC, RefRW<BurstSpawnC>>().WithNone<CooldownC>().WithAll<BurstSpawnC>().WithEntityAccess())
             {
                 if (SystemAPI.IsComponentEnabled<CooldownC>(burstSpawnRef.ValueRO.cooldownDelayE))
                     continue;
@@ -107,6 +107,8 @@ namespace Prototype.ECS.Runtime
             var allAngle = math.radians(gun.angleOffset * (gun.projectiles - 1));
             var halfAllAngle = allAngle / 2;
 
+            var upWorld = gun.twoDimMode ? math.back() : math.up();
+
             for (int i = 0; i < gun.projectiles; i++)
             {
                 float3 vector = ltwSpawnForward;
@@ -130,11 +132,16 @@ namespace Prototype.ECS.Runtime
 
                 var instance = ecb.Instantiate(gun.projectilePrefab);
 
-                ecb.SetComponent(instance, LocalTransform.FromPositionRotation(spawnPos, quaternion.LookRotation(vector, math.up())));
+                ecb.SetComponent(instance, LocalTransform.FromPositionRotation(spawnPos, gun.twoDimMode ? quaternion.identity : quaternion.LookRotation(vector, math.up())));
 
                 ecb.SetComponent<PhysicsVelocity>(instance, new PhysicsVelocity
                 {
                     Linear = vector * gun.speed
+                });
+
+                ecb.SetComponent<ProjectileC>(instance, new ProjectileC
+                {
+                    damage = gun.damage
                 });
 
                 if (SystemAPI.HasComponent<OwnerC>(e))

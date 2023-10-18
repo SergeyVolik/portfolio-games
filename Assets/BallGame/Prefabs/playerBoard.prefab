@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 7042155026861464292}
   - component: {fileID: 8369490590855068841}
   - component: {fileID: 300815036024976995}
+  - component: {fileID: 6958780521203265883}
   m_Layer: 0
   m_Name: playerBoard
   m_TagString: Untagged
@@ -280,6 +281,33 @@ MonoBehaviour:
     Tag05: 0
     Tag06: 0
     Tag07: 0
+--- !u!114 &6958780521203265883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5629626906774574182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5bbb7190ffec746827fa4bd8db1288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 979331907342135715}
+  projectilePrefab: {fileID: 1782757814026248262, guid: d78b2afbb728576478c398adfd549cc1,
+    type: 3}
+  spawnMoveType: 1
+  delayType: 1
+  delayBetweenShots: 0.5
+  projectileSpeed: 7
+  twoDimMode: 1
+  damage: 10
+  projectiles: 3
+  angleOffset: 11.57
+  projectileOffset: 0.84
+  burstSpawnDelays: 0.1
+  burstSpawns: 2
+  ativeAtStart: 1
 --- !u!1 &7498077596972796533
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +417,7 @@ Transform:
   m_GameObject: {fileID: 8212971890823214364}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.67, z: 0}
+  m_LocalPosition: {x: 0, y: 0.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
