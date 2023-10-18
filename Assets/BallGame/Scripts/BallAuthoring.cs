@@ -28,5 +28,6 @@ namespace SV.BallGame
     public struct BallDataC : IComponentData
     {
         public float force;
+        public int damage;
     }
 }

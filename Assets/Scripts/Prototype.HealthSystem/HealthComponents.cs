@@ -1,3 +1,4 @@
+using DOTS.Dispatcher.Runtime;
 using Unity.Entities;
 
 namespace Prototype.HealthSystem
@@ -13,6 +14,7 @@ namespace Prototype.HealthSystem
         public Entity receiver;
     }
 
+    [GenerateCleaUpDisableSystem]
     public struct ReceiveDamageB : IBufferElementData, IEnableableComponent
     {
         public int damage;
@@ -20,7 +22,7 @@ namespace Prototype.HealthSystem
     }
 
     [GenerateCleaUpDisableSystem]
-    public struct DeadEventC : IComponentData, IEnableableComponent
+    public struct DeadEventC : IComponentData, IEnableableComponent, IDisableableECSEvent
     {
     }
     public struct HealthRegenC : IComponentData
@@ -38,8 +40,7 @@ namespace Prototype.HealthSystem
     }
     
     [System.Serializable]
-    [GenerateCleaUpDisableSystem]
-    public struct HealthC : IComponentData, IEnableableComponent
+    public struct HealthC : IComponentData, IEnableableComponent, IDisableableECSEvent
     {
         public int health;
         public int healthMax;

@@ -1,5 +1,4 @@
-using Unity.Burst;
-using Unity.Collections;
+using Prototype.HealthSystem;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Physics;
@@ -9,36 +8,22 @@ using UnityEngine;
 
 namespace SV.BallGame
 {
-
-
-    public partial struct SystemName : ISystem
-    {
-        public void OnCreate(ref SystemState state)
-        {
-
-        }
-
-        public void OnUpdate(ref SystemState state)
-        {
-
-        }
-    }
-
-    [UpdateAfter(typeof(FixedStepSimulationSystemGroup))]
+    [UpdateInGroup(typeof(PhysicsSystemGroup))]
+    [UpdateAfter(typeof(StatefulCollisionEventBufferSystem))]
     public partial struct BallCollisionSystem : ISystem
     {
 
         public void OnCreate(ref SystemState state)
         {
-
+            
         }
 
         public void OnUpdate(ref SystemState state)
         {
-            var ecb = SystemAPI.GetSingleton<EndSimulationEntityCommandBufferSystem.Singleton>().CreateCommandBuffer(state.WorldUnmanaged);
+            var ecb = SystemAPI.GetSingleton<BeginSimulationEntityCommandBufferSystem.Singleton>().CreateCommandBuffer(state.WorldUnmanaged);
 
 
-            foreach (var (collisions, vel, ballData, cacheVel, e) in SystemAPI.Query<DynamicBuffer<StatefulCollisionEvent>, RefRW<PhysicsVelocity>, BallDataC, CacheVelC>().WithAll<HasPhysicsEvents, BallDataC>().WithEntityAccess())
+            foreach (var (collisions, vel, ballData, cacheVel, e) in SystemAPI.Query<DynamicBuffer<StatefulCollisionEvent>, RefRO<PhysicsVelocity>, BallDataC, CacheVelC>().WithAll<HasPhysicsEvents, BallDataC>().WithEntityAccess())
             {
 
                 foreach (var collision in collisions)
@@ -49,16 +34,20 @@ namespace SV.BallGame
 
                         var otherColEntity = collision.EntityA == e ? collision.EntityB : collision.EntityA;
 
-                        if (SystemAPI.HasComponent<DestroyableObjC>(otherColEntity))
-                        {
-                            ecb.DestroyEntity(otherColEntity);
+                        if (SystemAPI.HasBuffer<ReceiveDamageB>(otherColEntity))
+                        {                          
+                            ecb.AddDamage(otherColEntity, new ReceiveDamageB
+                            {
+                                damage = ballData.damage,
+                                attacker = e,
+                            });
                         }
 
-                        vel.ValueRW.Linear = math.normalize(cacheVel.vel) * ballData.force;
+                        //ecb.SetComponent<PhysicsVelocity>(e, new PhysicsVelocity { Linear = math.normalize(vel.ValueRO.Linear) * ballData.force });
 
                     }
                 }
             }
         }
-    } 
+    }
 }

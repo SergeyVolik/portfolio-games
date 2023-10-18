@@ -1,3 +1,4 @@
+using DOTS.Dispatcher.Runtime;
 using Unity.Burst;
 using Unity.Entities;
 using UnityEngine;
@@ -24,6 +25,9 @@ namespace Prototype.HealthSystem
             var ecb = SystemAPI.GetSingleton<EndSimulationEntityCommandBufferSystem.Singleton>()
                 .CreateCommandBuffer(state.WorldUnmanaged);
 
+            var eventCB = SystemAPI.GetSingleton<DispatcherSystem.Singleton>()
+              .CreateEventBuffer(state.WorldUnmanaged);
+
             foreach (var (health, e) in SystemAPI.Query<HealthC>().WithChangeFilter<HealthC>().WithNone<IsDeadTagC>()
                          .WithEntityAccess())
             {
@@ -37,7 +41,7 @@ namespace Prototype.HealthSystem
 
                 Debug.Log("Death Event");
                 ecb.SetComponentEnabled<IsDeadTagC>(e, true);
-                ecb.SetComponentEnabled<DeadEventC>(e, true);
+                eventCB.PostEvent<DeadEventC>(e);
             }
         }
     }

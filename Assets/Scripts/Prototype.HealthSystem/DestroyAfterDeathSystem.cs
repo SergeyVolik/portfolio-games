@@ -11,7 +11,7 @@ namespace Prototype.HealthSystem
 
         public void OnUpdate(ref SystemState state)
         {
-            var ecb = SystemAPI.GetSingleton<EndSimulationEntityCommandBufferSystem.Singleton>().CreateCommandBuffer(state.WorldUnmanaged);
+            var ecb = SystemAPI.GetSingleton<BeginInitializationEntityCommandBufferSystem.Singleton>().CreateCommandBuffer(state.WorldUnmanaged);
 
             foreach (var (c, entity) in SystemAPI.Query<DestroyAfterDeath>().WithAll<DeadEventC>().WithEntityAccess())
             {

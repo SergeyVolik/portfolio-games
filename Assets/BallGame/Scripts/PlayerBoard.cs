@@ -11,6 +11,8 @@ namespace SV.BallGame
     {
         public float moveSpeed;
         public float ballSpeed;
+        public int ballDamage;
+
         public Transform ballSpawnPoint;
         public Transform ballPrefab;
         void OnEnable() { }
@@ -30,6 +32,7 @@ namespace SV.BallGame
                     ballSpeed = authoring.ballSpeed,
                     ballSpawnPoint = GetEntity(authoring.ballSpawnPoint, TransformUsageFlags.Dynamic),
                     ballPrefab = GetEntity(authoring.ballPrefab, TransformUsageFlags.Dynamic),
+                    ballDamage = authoring.ballDamage,
 
                 });
 
@@ -46,6 +49,7 @@ namespace SV.BallGame
         public float ballSpeed;
         public Entity ballSpawnPoint;
         public Entity ballPrefab;
+        public int ballDamage;
 
     }
 
