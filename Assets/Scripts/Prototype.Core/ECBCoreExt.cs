@@ -20,11 +20,17 @@ namespace Prototype
            
         }
 
+        public static void SetupLifetime(this EntityCommandBuffer ecb, Entity e, LifetimeC lifetime)
+        {
+            ecb.AddComponent(e, lifetime);
+            ecb.AddComponent<CurrentLifetimeC>(e);
+        }
+
         public static void SetCooldown(this EntityCommandBuffer ecb, Entity e, CooldownC cooldown)
         {
             ecb.AddComponentAndEnable(e, cooldown);
-
         }
+
         public static void ActivateCooldown(this EntityCommandBuffer ecb, Entity e, float cooldown)
         {
             ecb.AddComponentAndEnable(e, new CooldownC { 

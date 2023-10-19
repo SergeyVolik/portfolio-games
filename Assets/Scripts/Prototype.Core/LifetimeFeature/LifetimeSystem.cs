@@ -14,11 +14,10 @@ namespace Prototype
         [BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
-            var ecb = SystemAPI.GetSingleton<EndSimulationEntityCommandBufferSystem.Singleton>()
+            var ecb = SystemAPI.GetSingleton<BeginInitializationEntityCommandBufferSystem.Singleton>()
                 .CreateCommandBuffer(state.WorldUnmanaged);
 
             var delta = SystemAPI.Time.DeltaTime;
-
 
             foreach (var (lf, clf, e) in SystemAPI.Query<RefRO<LifetimeC>, RefRW<CurrentLifetimeC>>()
                          .WithEntityAccess())

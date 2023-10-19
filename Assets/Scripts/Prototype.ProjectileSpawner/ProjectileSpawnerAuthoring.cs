@@ -1,15 +1,19 @@
+using Prototype.ECS.Baking;
 using Prototype.ECS.Runtime;
 using Sirenix.OdinInspector;
+using System;
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Prototype.ECS.Runtime
+namespace Prototype.ProjectileSpawner
 {
-    public enum SpawnProjectileMoveType
+
+    [Flags]
+    public enum SpawnProjectileMoveType : byte
     {
-        Forward,
-        Angle
+        Forward = 1 << 1,
+        Angle = 1 << 2
     }
 
     public enum SpawnDelayType
@@ -32,6 +36,18 @@ namespace Prototype.ECS.Runtime
 
     public struct AutoSpawnC : IComponentData, IEnableableComponent { }
 
+    public struct ProjectileForwardModeC : IComponentData, IEnableableComponent
+    {
+        public int projectiles;
+        public float projectileOffset;
+    }
+
+    public struct ProjectileAngleModeC : IComponentData, IEnableableComponent
+    {
+        public float angleOffset;
+        public int projectiles;
+    }
+
     public struct ProjectileSpawnerC : IComponentData, IEnableableComponent
     {
         public Entity projectilePrefab;
@@ -41,6 +57,7 @@ namespace Prototype.ECS.Runtime
         public float speed;
         public int damage;
 
+        public float projectileLifetime;
         public SpawnProjectileMoveType spawnType;
         public float angleOffset;
         public float projectileOffset;
@@ -49,22 +66,21 @@ namespace Prototype.ECS.Runtime
 
 }
 
-
-
-
-namespace Prototype.ECS.Baking
+namespace Prototype.ProjectileSpawner
 {
-
-
 
     [DisallowMultipleComponent]
     public class ProjectileSpawnerAuthoring : MonoBehaviour
     {
+        private const string hasAngleFlag = "@(this.spawnMoveType & SpawnProjectileMoveType.Angle) == SpawnProjectileMoveType.Angle";
+        private const string hasForwardFlag = "@(this.spawnMoveType & SpawnProjectileMoveType.Forward) == SpawnProjectileMoveType.Forward";
+        private const string hasBurstMode = "@this.delayType == SpawnDelayType.Burst";
         public Transform spawnPoint;
         public GameObject projectilePrefab;
         public SpawnProjectileMoveType spawnMoveType;
         public SpawnDelayType delayType;
 
+        public float projectileLifetime;
         public float delayBetweenShots;
         public float projectileSpeed;
         public bool twoDimMode;
@@ -75,29 +91,28 @@ namespace Prototype.ECS.Baking
         public int projectiles = 1;
 
         [BoxGroup("Angle")]
-        [ShowIf("@this.spawnMoveType == SpawnProjectileMoveType.Angle")]
+        [ShowIf(hasAngleFlag)]
         public float angleOffset = 1;
 
         [BoxGroup("Forward")]
-        [ShowIf("@this.spawnMoveType == SpawnProjectileMoveType.Forward")]
+        [ShowIf(hasForwardFlag)]
         public float projectileOffset = 0.1f;
 
         [BoxGroup("Burst")]
-        [ShowIf("@this.delayType == SpawnDelayType.Burst")]
+        [ShowIf(hasBurstMode)]
         public float burstSpawnDelays = 0.1f;
         [BoxGroup("Burst")]
-        [ShowIf("@this.delayType == SpawnDelayType.Burst")]
+        [ShowIf(hasBurstMode)]
         public int burstSpawns = 2;
 
         public bool ativeAtStart = false;
-        void OnEnable() { }
-        class Baker : Baker<ProjectileSpawnerAuthoring>
-        {
-            public override void Bake(ProjectileSpawnerAuthoring authoring)
-            {
-                if (!authoring.enabled)
-                    return;
 
+        void OnEnable() { }
+
+        class Baker : BakerForEnabledComponent<ProjectileSpawnerAuthoring>
+        {
+            public override void BakeIfEnabled(ProjectileSpawnerAuthoring authoring)
+            {
                 var entity = GetEntity(TransformUsageFlags.Dynamic);
 
                 AddComponent(entity, new ProjectileSpawnerC
@@ -112,9 +127,23 @@ namespace Prototype.ECS.Baking
                     projectileOffset = authoring.projectileOffset,
                     twoDimMode = authoring.twoDimMode,
                     damage = authoring.damage,
+                    projectileLifetime = authoring.projectileLifetime,
                 });
-
                 SetComponentEnabled<ProjectileSpawnerC>(entity, authoring.ativeAtStart);
+
+                AddComponent<ProjectileAngleModeC>(entity, new ProjectileAngleModeC
+                {
+                    angleOffset = authoring.angleOffset,
+                    projectiles = authoring.projectiles,
+                });
+                SetComponentEnabled<ProjectileAngleModeC>(entity, (authoring.spawnMoveType & SpawnProjectileMoveType.Angle) == SpawnProjectileMoveType.Angle);
+                AddComponent<ProjectileForwardModeC>(entity, new ProjectileForwardModeC
+                {
+                    projectiles = authoring.projectiles,
+                    projectileOffset = authoring.projectileOffset
+                });
+                SetComponentEnabled<ProjectileForwardModeC>(entity, (authoring.spawnMoveType & SpawnProjectileMoveType.Forward) == SpawnProjectileMoveType.Forward);
+
 
                 AddComponent<AutoSpawnC>(entity);
                 SetComponentEnabled<AutoSpawnC>(entity, false);
@@ -133,12 +162,8 @@ namespace Prototype.ECS.Baking
 
                 SetComponentEnabled<BurstSpawnC>(entity, false);
 
-                //AddComponent<CooldownC>(entity);
-                //SetComponentEnabled<CooldownC>(entity, false);
-
                 AddComponent<SemiSpawnC>(entity);
                 SetComponentEnabled<SemiSpawnC>(entity, false);
-
 
                 switch (authoring.delayType)
                 {
@@ -161,52 +186,45 @@ namespace Prototype.ECS.Baking
 
         private void OnDrawGizmosSelected()
         {
-            switch (spawnMoveType)
+            if ((spawnMoveType & SpawnProjectileMoveType.Forward) == SpawnProjectileMoveType.Forward)
             {
-                case SpawnProjectileMoveType.Forward:
-                    var fullOffset = projectileOffset * projectiles;
-                    var halfOffset = fullOffset / 2f - (projectileOffset / 2f);
+                var fullOffset = projectileOffset * projectiles;
+                var halfOffset = fullOffset / 2f - (projectileOffset / 2f);
 
-                    for (int i = 0; i < projectiles; i++)
-                    {
+                for (int i = 0; i < projectiles; i++)
+                {
 
-                        var forward = twoDimMode ? transform.up : transform.forward;
-                        var right = transform.right;
+                    var forward = twoDimMode ? transform.up : transform.forward;
+                    var right = transform.right;
 
-                        var pos1 = spawnPoint.position;
-                        var pos2 = spawnPoint.position + forward * 5f;
+                    var pos1 = spawnPoint.position;
+                    var pos2 = spawnPoint.position + forward * 5f;
 
-                        pos1 = pos1 + right * (-halfOffset + projectileOffset * i);
-                        pos2 = pos2 + right * (-halfOffset + projectileOffset * i);
+                    pos1 = pos1 + right * (-halfOffset + projectileOffset * i);
+                    pos2 = pos2 + right * (-halfOffset + projectileOffset * i);
 
-                        Gizmos.DrawLine(pos1, pos2);
-                    }
-                    break;
+                    Gizmos.DrawLine(pos1, pos2);
+                }
+            }
 
-                case SpawnProjectileMoveType.Angle:
+            if ((spawnMoveType & SpawnProjectileMoveType.Angle) == SpawnProjectileMoveType.Angle)
+            {
+                var allAngle = math.radians(angleOffset * (projectiles - 1));
+                var halfAllAngle = allAngle / 2;
+                var forwardVec = twoDimMode ? transform.up : transform.forward;
+                var upVec = twoDimMode ? -transform.forward : transform.up;
+                for (int i = 0; i < projectiles; i++)
+                {
 
+                    var qut = quaternion.AxisAngle(upVec, math.radians(angleOffset * i) - halfAllAngle);
 
+                    var forward = math.mul(qut, forwardVec);
 
-                    var allAngle = math.radians(angleOffset * (projectiles - 1));
-                    var halfAllAngle = allAngle / 2;
-                    var forwardVec = twoDimMode ? transform.up : transform.forward;
-                    var upVec = twoDimMode ? -transform.forward : transform.up;
-                    for (int i = 0; i < projectiles; i++)
-                    {
+                    var pos1 = spawnPoint.position;
+                    var pos2 = spawnPoint.position + (Vector3)forward * 5f;
 
-                        var qut = quaternion.AxisAngle(upVec, math.radians(angleOffset * i) - halfAllAngle);
-
-                        var forward = math.mul(qut, forwardVec);
-
-                        var pos1 = spawnPoint.position;
-                        var pos2 = spawnPoint.position + (Vector3)forward * 5f;
-
-                        Gizmos.DrawLine(pos1, pos2);
-                    }
-
-                    break;
-                default:
-                    break;
+                    Gizmos.DrawLine(pos1, pos2);
+                }
             }
         }
     }

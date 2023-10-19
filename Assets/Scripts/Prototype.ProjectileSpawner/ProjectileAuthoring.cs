@@ -1,12 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Unity.Entities;
-using Unity.Physics.Stateful;
-using Prototype.HealthSystem;
-using Unity.Physics.Systems;
 
-namespace Prototype
+namespace Prototype.ProjectileSpawner
 {
 
     [DisallowMultipleComponent]

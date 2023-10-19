@@ -373,7 +373,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5629626906774574182}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae5bbb7190ffec746827fa4bd8db1288, type: 3}
   m_Name: 
@@ -381,8 +381,9 @@ MonoBehaviour:
   spawnPoint: {fileID: 979331907342135715}
   projectilePrefab: {fileID: 1782757814026248262, guid: d78b2afbb728576478c398adfd549cc1,
     type: 3}
-  spawnMoveType: 1
+  spawnMoveType: 4
   delayType: 1
+  projectileLifetime: 1
   delayBetweenShots: 0.5
   projectileSpeed: 7
   twoDimMode: 1

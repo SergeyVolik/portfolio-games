@@ -4,9 +4,12 @@ using Unity.Transforms;
 using Unity.Mathematics;
 using UnityEngine;
 using Unity.Burst;
+using Prototype.ProjectileSpawner;
+using System.Numerics;
 
-namespace Prototype.ECS.Runtime
+namespace Prototype.ProjectileSpawner
 {
+    [UpdateInGroup(typeof(ProjectileSpawnerGroup))]
     public partial struct ProjectileSpawnerSystem : ISystem
     {
         public void OnCreate(ref SystemState state)
@@ -65,7 +68,8 @@ namespace Prototype.ECS.Runtime
         [BurstCompile]
         private void BurstSpawner(ref SystemState state, EntityCommandBuffer ecb)
         {
-            foreach (var (gun, burstSpawnRef, e) in SystemAPI.Query<ProjectileSpawnerC, RefRW<BurstSpawnC>>().WithNone<CooldownC>().WithAll<BurstSpawnC>().WithEntityAccess())
+            foreach (var (gun, burstSpawnRef, e) in
+                SystemAPI.Query<ProjectileSpawnerC, RefRW<BurstSpawnC>>().WithNone<CooldownC>().WithAll<BurstSpawnC>().WithEntityAccess())
             {
                 if (SystemAPI.IsComponentEnabled<CooldownC>(burstSpawnRef.ValueRO.cooldownDelayE))
                     continue;
@@ -92,7 +96,7 @@ namespace Prototype.ECS.Runtime
         }
 
         [BurstCompile]
-        private void SpawnProjectile(ref SystemState state, EntityCommandBuffer ecb, ProjectileSpawnerC gun, Entity e)
+        private void SpawnProjectile(ref SystemState state, EntityCommandBuffer ecb, ProjectileSpawnerC gun, Entity gunEntity)
         {
             var fullOffset = gun.projectileOffset * gun.projectiles;
             var halfOffset = fullOffset / 2f - (gun.projectileOffset / 2f);
@@ -109,48 +113,61 @@ namespace Prototype.ECS.Runtime
 
             var upWorld = gun.twoDimMode ? math.back() : math.up();
 
+
             for (int i = 0; i < gun.projectiles; i++)
             {
                 float3 vector = ltwSpawnForward;
                 float3 spawnPos = ltwSpawnPos;
 
-
-                switch (gun.spawnType)
+                if ((gun.spawnType & SpawnProjectileMoveType.Forward) == SpawnProjectileMoveType.Forward)
                 {
-                    case SpawnProjectileMoveType.Forward:
-                        spawnPos = spawnPos + ltwSpawnRight * (-halfOffset + gun.projectileOffset * i);
-                        break;
-                    case SpawnProjectileMoveType.Angle:
+                    spawnPos = spawnPos + ltwSpawnRight * (-halfOffset + gun.projectileOffset * i);
 
-                        var qut = quaternion.AxisAngle(ltwSpawnUp, math.radians(gun.angleOffset * i) - halfAllAngle);
-                        vector = math.mul(qut, ltwSpawnForward);
+                    var rotation = gun.twoDimMode ? quaternion.identity : quaternion.LookRotation(vector, math.up());
+                    var instance = ecb.Instantiate(gun.projectilePrefab);
 
-                        break;
-                    default:
-                        break;
+                    SetupProjectileInstance(ref state, ecb, gun, gunEntity, vector, spawnPos, rotation, instance);
                 }
 
-                var instance = ecb.Instantiate(gun.projectilePrefab);
-
-                ecb.SetComponent(instance, LocalTransform.FromPositionRotation(spawnPos, gun.twoDimMode ? quaternion.identity : quaternion.LookRotation(vector, math.up())));
-
-                ecb.SetComponent<PhysicsVelocity>(instance, new PhysicsVelocity
+                if ((gun.spawnType & SpawnProjectileMoveType.Angle) == SpawnProjectileMoveType.Angle)
                 {
-                    Linear = vector * gun.speed
-                });
+                    var qut = quaternion.AxisAngle(ltwSpawnUp, math.radians(gun.angleOffset * i) - halfAllAngle);
+                    vector = math.mul(qut, ltwSpawnForward);
 
-                ecb.SetComponent<ProjectileC>(instance, new ProjectileC
-                {
-                    damage = gun.damage
-                });
+                    var rotation = gun.twoDimMode ? quaternion.identity : quaternion.LookRotation(vector, math.up());
+                    var instance = ecb.Instantiate(gun.projectilePrefab);
 
-                if (SystemAPI.HasComponent<OwnerC>(e))
-                {
-                    ecb.AddComponent<OwnerC>(instance, new OwnerC
-                    {
-                        value = SystemAPI.GetComponentRO<OwnerC>(e).ValueRO.value
-                    });
+                    SetupProjectileInstance(ref state, ecb, gun, gunEntity, vector, spawnPos, rotation, instance);
                 }
+
+            }
+        }
+
+        private void SetupProjectileInstance(ref SystemState state, EntityCommandBuffer ecb, ProjectileSpawnerC gun, Entity gunEntity, float3 vector, float3 spawnPos, quaternion rotation, Entity projectileInstance)
+        {
+            ecb.SetComponent(projectileInstance, LocalTransform.FromPositionRotation(spawnPos, rotation));
+
+            ecb.SetComponent(projectileInstance, new PhysicsVelocity
+            {
+                Linear = vector * gun.speed
+            });
+
+            ecb.SetComponent(projectileInstance, new ProjectileC
+            {
+                damage = gun.damage
+            });
+
+            ecb.SetupLifetime(projectileInstance, new LifetimeC
+            {
+                value = gun.projectileLifetime
+            });
+
+            if (SystemAPI.HasComponent<OwnerC>(gunEntity))
+            {
+                ecb.AddComponent(projectileInstance, new OwnerC
+                {
+                    value = SystemAPI.GetComponentRO<OwnerC>(gunEntity).ValueRO.value
+                });
             }
         }
     }
