@@ -6,6 +6,8 @@ namespace Prototype.HealthSystem
     /// <summary>
     /// Update <see cref="HasFullHpT"> after each <see cref="HealthC"> event
     /// </summary>
+    [UpdateInGroup(typeof(HealthSystemGroup))]
+    [UpdateAfter(typeof(ApplyDamageSystem))]
     public partial struct UpdateFullHpFlagSystem : ISystem
     {
         private EntityQuery query;

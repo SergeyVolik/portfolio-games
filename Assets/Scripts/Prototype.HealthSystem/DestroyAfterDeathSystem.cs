@@ -5,7 +5,7 @@ namespace Prototype.HealthSystem
 {
     public struct DestroyAfterDeath : IComponentData { }
 
-    [UpdateInGroup(typeof(InitializationSystemGroup))]
+    [UpdateInGroup(typeof(HealthSystemGroup))]
     public partial struct DestroyAfterDeathSystem : ISystem
     {
         public void OnCreate(ref SystemState state) { }

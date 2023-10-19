@@ -8,6 +8,8 @@ namespace Prototype.HealthSystem
     /// <summary>
     /// Update <see cref="IsDeadTagC"> after each <see cref="HealthC"> changes
     /// </summary>
+    [UpdateInGroup(typeof(HealthSystemGroup))]
+    [UpdateAfter(typeof(ApplyDamageSystem))]
     public partial struct UpdateDeadFlagSystem : ISystem
     {
         private EntityQuery query;

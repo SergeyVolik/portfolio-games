@@ -4,7 +4,7 @@ using Unity.Physics;
 using Unity.Physics.Extensions;
 using Unity.Transforms;
 
-namespace Prototype
+namespace Unity.Physics.Stateful
 {
     [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
     public partial struct PhysicsImpulseExecutorSystem : ISystem

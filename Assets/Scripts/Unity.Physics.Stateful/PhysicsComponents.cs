@@ -1,7 +1,7 @@
 using Unity.Entities;
 using Unity.Mathematics;
 
-namespace Prototype
+namespace Unity.Physics.Stateful
 {
     public struct AddImpulseC : IBufferElementData, IEnableableComponent
     {

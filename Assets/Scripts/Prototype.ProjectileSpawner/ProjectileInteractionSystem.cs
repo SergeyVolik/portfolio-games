@@ -1,13 +1,11 @@
 using Prototype.HealthSystem;
 using Unity.Entities;
 using Unity.Physics.Stateful;
-using Unity.Physics.Systems;
 using UnityEngine;
 
 namespace Prototype.ProjectileSpawner
 {
-    [UpdateInGroup(typeof(PhysicsSystemGroup))]
-    [UpdateAfter(typeof(StatefulCollisionEventBufferSystem))]
+    [UpdateInGroup(typeof(StatefulCollisionSystemGroup))]
     public partial struct ProjectileInteractionSystem : ISystem
     {
         public void OnCreate(ref SystemState state)
@@ -40,7 +38,6 @@ namespace Prototype.ProjectileSpawner
                         }
                     }
                 }
-
             }
         }
     }

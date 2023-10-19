@@ -4,9 +4,10 @@ using Unity.Collections;
 using Unity.Entities;
 
 
-namespace Prototype
+namespace Prototype.HealthSystem
 {
-    public partial struct CP5_ApplyDamageSystem : ISystem
+    [UpdateInGroup(typeof(HealthSystemGroup))]
+    public partial struct ApplyDamageSystem : ISystem
     {
         public void OnUpdate(ref SystemState state)
         {
