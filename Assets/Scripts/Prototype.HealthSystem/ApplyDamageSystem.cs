@@ -6,6 +6,10 @@ using Unity.Entities;
 
 namespace Prototype.HealthSystem
 {
+
+  
+
+
     [UpdateInGroup(typeof(HealthSystemGroup))]
     public partial struct ApplyDamageSystem : ISystem
     {

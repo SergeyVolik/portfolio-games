@@ -3,7 +3,7 @@ using System.Diagnostics;
 namespace Prototype
 {
     /// <summary>
-    /// <see cref="PrototypeDebug"> only work in DEVELOPMENT_BUILD and inside UNITY_EDITOR
+    /// <see cref="PrototypeDebug"> works with DEVELOPMENT_BUILD or UNITY_EDITOR
     /// </summary>
     public static class PrototypeDebug
     {

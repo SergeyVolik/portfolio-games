@@ -8,8 +8,7 @@ namespace SV.BallGame
         protected override void OnUpdate()
         {
             float horizontaMoveInput = 0;
-            bool spawnBall = false;
-
+            float verticalMoveInput = 0;
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 horizontaMoveInput = -1f;
@@ -19,15 +18,19 @@ namespace SV.BallGame
                 horizontaMoveInput = 1f;
             }
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
-                spawnBall = true;
+                verticalMoveInput = 1f;
+            }
+            else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+            {
+                verticalMoveInput = -1f;
             }
 
-            foreach (var item in SystemAPI.Query<RefRW<BoardInputC>>().WithAll<ReadPlayerInput>())
+            foreach (var item in SystemAPI.Query<RefRW<ShipInputC>>().WithAll<ReadPlayerInput>())
             {
-                item.ValueRW.spawnBall = spawnBall;
                 item.ValueRW.horizontaMoveInput = horizontaMoveInput;
+                item.ValueRW.verticalMoveInput = verticalMoveInput;
             }
         }
     }

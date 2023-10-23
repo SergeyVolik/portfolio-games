@@ -2,10 +2,7 @@ using Unity.Entities;
 using Unity.Physics;
 using Unity.Transforms;
 using Unity.Mathematics;
-using UnityEngine;
 using Unity.Burst;
-using Prototype.ProjectileSpawner;
-using System.Numerics;
 
 namespace Prototype.ProjectileSpawner
 {
@@ -139,20 +136,20 @@ namespace Prototype.ProjectileSpawner
 
                     SetupProjectileInstance(ref state, ecb, gun, gunEntity, vector, spawnPos, rotation, instance);
                 }
-
             }
         }
 
         private void SetupProjectileInstance(ref SystemState state, EntityCommandBuffer ecb, ProjectileSpawnerC gun, Entity gunEntity, float3 vector, float3 spawnPos, quaternion rotation, Entity projectileInstance)
         {
+            //PrototypeDebug.Log($"SetupProjectileInstance {projectileInstance}");
             ecb.SetComponent(projectileInstance, LocalTransform.FromPositionRotation(spawnPos, rotation));
 
-            ecb.SetComponent(projectileInstance, new PhysicsVelocity
+            ecb.AddComponent(projectileInstance, new PhysicsVelocity
             {
                 Linear = vector * gun.speed
             });
 
-            ecb.SetComponent(projectileInstance, new ProjectileC
+            ecb.AddComponent(projectileInstance, new ProjectileC
             {
                 damage = gun.damage
             });

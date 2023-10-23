@@ -16,7 +16,7 @@ namespace Prototype.HealthSystem
 
             foreach (var (c, entity) in SystemAPI.Query<DestroyAfterDeath>().WithAll<DeadEventC>().WithEntityAccess())
             {
-                ecb.DestroyEntity(entity);
+                ecb.DestroyFromSystem(entity);
                 Debug.Log("DestroyAfterDeath");
 
             }

@@ -198,7 +198,7 @@ namespace Prototype.ProjectileSpawner
                     var right = transform.right;
 
                     var pos1 = spawnPoint.position;
-                    var pos2 = spawnPoint.position + forward * 5f;
+                    var pos2 = spawnPoint.position + forward * (projectileLifetime * projectileSpeed);
 
                     pos1 = pos1 + right * (-halfOffset + projectileOffset * i);
                     pos2 = pos2 + right * (-halfOffset + projectileOffset * i);
@@ -221,7 +221,7 @@ namespace Prototype.ProjectileSpawner
                     var forward = math.mul(qut, forwardVec);
 
                     var pos1 = spawnPoint.position;
-                    var pos2 = spawnPoint.position + (Vector3)forward * 5f;
+                    var pos2 = spawnPoint.position + (Vector3)forward * projectileLifetime * projectileSpeed;
 
                     Gizmos.DrawLine(pos1, pos2);
                 }
