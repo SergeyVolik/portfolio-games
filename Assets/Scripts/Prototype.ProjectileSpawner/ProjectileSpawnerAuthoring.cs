@@ -1,5 +1,4 @@
 using Prototype.ECS.Baking;
-using Prototype.ECS.Runtime;
 using Sirenix.OdinInspector;
 using System;
 using Unity.Entities;
@@ -41,6 +40,7 @@ namespace Prototype.ProjectileSpawner
         public int projectiles;
         public float projectileOffset;
     }
+    public struct ExecuteProjectileSpawn : IComponentData, IEnableableComponent { }
 
     public struct ProjectileAngleModeC : IComponentData, IEnableableComponent
     {
@@ -130,6 +130,9 @@ namespace Prototype.ProjectileSpawner
                     projectileLifetime = authoring.projectileLifetime,
                 });
                 SetComponentEnabled<ProjectileSpawnerC>(entity, authoring.ativeAtStart);
+
+                AddComponent<ExecuteProjectileSpawn>(entity);
+                SetComponentEnabled<ExecuteProjectileSpawn>(entity, false);
 
                 AddComponent<ProjectileAngleModeC>(entity, new ProjectileAngleModeC
                 {

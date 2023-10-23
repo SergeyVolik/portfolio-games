@@ -1,13 +1,14 @@
+using Unity.Burst;
 using Unity.Entities;
+using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Transforms;
-using Unity.Mathematics;
-using Unity.Burst;
 
 namespace Prototype.ProjectileSpawner
 {
     [UpdateInGroup(typeof(ProjectileSpawnerGroup))]
-    public partial struct ProjectileSpawnerSystem : ISystem
+    [UpdateAfter(typeof(ProjectileSpawnerDelaySystem))]
+    public partial struct ProjectileSpawnerExecuteSystem : ISystem
     {
         public void OnCreate(ref SystemState state)
         {
@@ -18,82 +19,16 @@ namespace Prototype.ProjectileSpawner
         {
             var ecb = SystemAPI.GetSingleton<BeginSimulationEntityCommandBufferSystem.Singleton>().CreateCommandBuffer(state.WorldUnmanaged);
 
-            SemiSpawner(ref state, ecb);
-            AutoSpawner(ref state, ecb);
-            BurstSpawner(ref state, ecb);
-        }
-
-        [BurstCompile]
-        private void SemiSpawner(ref SystemState state, EntityCommandBuffer ecb)
-        {
-
-            foreach (var item in SystemAPI.Query<EnabledRefRW<ProjectileSpawnerC>>().WithAll<CooldownC, SemiSpawnC>())
+            foreach (var (gun, e) in SystemAPI.Query<ProjectileSpawnerC>().WithAll<ExecuteProjectileSpawn>().WithEntityAccess())
             {
-                item.ValueRW = false;
-            }
-
-            foreach (var (gun, e) in SystemAPI.Query<ProjectileSpawnerC>().WithNone<CooldownC>().WithAll<SemiSpawnC>().WithEntityAccess())
-            {
-                ecb.AddComponentAndEnable(e, new CooldownC
-                {
-                    t = 0,
-                    duration = gun.delayBetweenShots,
-                });
-
                 SpawnProjectile(ref state, ecb, gun, e);
 
+                ecb.SetComponentEnabled<ExecuteProjectileSpawn>(e, false);
             }
         }
 
         [BurstCompile]
-        private void AutoSpawner(ref SystemState state, EntityCommandBuffer ecb)
-        {
-
-            foreach (var (gun, e) in SystemAPI.Query<ProjectileSpawnerC>().WithNone<CooldownC>().WithAll<AutoSpawnC>().WithEntityAccess())
-            {
-                ecb.AddComponentAndEnable(e, new CooldownC
-                {
-                    t = 0,
-                    duration = gun.delayBetweenShots,
-                });
-
-                SpawnProjectile(ref state, ecb, gun, e);
-
-            }
-        }
-
-        [BurstCompile]
-        private void BurstSpawner(ref SystemState state, EntityCommandBuffer ecb)
-        {
-            foreach (var (gun, burstSpawnRef, e) in
-                SystemAPI.Query<ProjectileSpawnerC, RefRW<BurstSpawnC>>().WithNone<CooldownC>().WithAll<BurstSpawnC>().WithEntityAccess())
-            {
-                if (SystemAPI.IsComponentEnabled<CooldownC>(burstSpawnRef.ValueRO.cooldownDelayE))
-                    continue;
-
-                ecb.AddComponentAndEnable<CooldownC>(e, new CooldownC
-                {
-                    duration = burstSpawnRef.ValueRO.delays
-                });
-
-                burstSpawnRef.ValueRW.currentProduceCount++;
-
-                SpawnProjectile(ref state, ecb, gun, e);
-
-                if (burstSpawnRef.ValueRW.currentProduceCount >= burstSpawnRef.ValueRW.produceTimes)
-                {
-                    burstSpawnRef.ValueRW.currentProduceCount = 0;
-                    ecb.AddComponentAndEnable(e, new CooldownC
-                    {
-                        t = 0,
-                        duration = gun.delayBetweenShots,
-                    });
-                }
-            }
-        }
-
-        [BurstCompile]
-        private void SpawnProjectile(ref SystemState state, EntityCommandBuffer ecb, ProjectileSpawnerC gun, Entity gunEntity)
+        private void SpawnProjectile(ref SystemState state, EntityCommandBuffer ecb, in ProjectileSpawnerC gun, Entity gunEntity)
         {
             var fullOffset = gun.projectileOffset * gun.projectiles;
             var halfOffset = fullOffset / 2f - (gun.projectileOffset / 2f);
@@ -139,7 +74,7 @@ namespace Prototype.ProjectileSpawner
             }
         }
 
-        private void SetupProjectileInstance(ref SystemState state, EntityCommandBuffer ecb, ProjectileSpawnerC gun, Entity gunEntity, float3 vector, float3 spawnPos, quaternion rotation, Entity projectileInstance)
+        private void SetupProjectileInstance(ref SystemState state, EntityCommandBuffer ecb, in ProjectileSpawnerC gun, Entity gunEntity, float3 vector, float3 spawnPos, quaternion rotation, Entity projectileInstance)
         {
             //PrototypeDebug.Log($"SetupProjectileInstance {projectileInstance}");
             ecb.SetComponent(projectileInstance, LocalTransform.FromPositionRotation(spawnPos, rotation));
