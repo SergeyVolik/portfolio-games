@@ -11,7 +11,7 @@ namespace SV.BallGame
     [DisallowMultipleComponent]
     public class GunShotFXDataAuthoring : MonoBehaviour
     {
-        public ParticlePoolSO pool;
+        public ParticleSystem particleEffect;
         public AudioSFX sfx;
 
         void OnEnable() { }
@@ -27,7 +27,7 @@ namespace SV.BallGame
 
                 AddComponentObject(entity, new GunShotFXDataC
                 {
-                    pool = authoring.pool,
+                    particleEffect = GetEntity(authoring.particleEffect, TransformUsageFlags.Dynamic),
                     sfx = authoring.sfx,
                 });
             }
@@ -36,14 +36,11 @@ namespace SV.BallGame
 
     public class GunShotFXDataC : IComponentData
     {
-        public ParticlePoolSO pool;
+        public Entity particleEffect;
         public AudioSFX sfx;
 
     }
 
-
-
-    //[UpdateAfter(typeof(ProjectileSpawnerExecuteSystem))]
     public partial class PlayFXAfterShotSystem : SystemBase
     {
         protected override void OnUpdate()
@@ -52,12 +49,9 @@ namespace SV.BallGame
             {
                 data.sfx?.Play();
 
-                if (data.pool)
+                if (SystemAPI.HasComponent<PlayC>(data.particleEffect))
                 {
-                    data.pool.Pool.Get(out var particle);
-
-                    particle.Play();
-                    particle.transform.position = worldMat.Position;
+                    SystemAPI.SetComponentEnabled<PlayC>(data.particleEffect, true);
                 }
             }
         }

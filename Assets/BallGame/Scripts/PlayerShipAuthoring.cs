@@ -10,7 +10,9 @@ namespace SV.BallGame
     public class PlayerShipAuthoring : MonoBehaviour
     {
         public float moveSpeed;
-
+        public GameObject shipRoot;
+        public float shipMaxAnimRot;
+        public float rotSpeed;
         void OnEnable() { }
 
         class Baker : Baker<PlayerShipAuthoring>
@@ -22,9 +24,15 @@ namespace SV.BallGame
 
                 var entity = GetEntity(TransformUsageFlags.Dynamic);
 
-                AddComponent(entity, new BoardC
+                AddComponent(entity, new ShipControllerDataC
                 {
                     moveSpeed = authoring.moveSpeed
+                });
+                AddComponent(entity, new ShipAnimationDataC
+                {
+                    rotSpeed = authoring.rotSpeed,
+                    shipMaxAnimRot = authoring.shipMaxAnimRot,
+                    shipRoot = GetEntity(authoring.shipRoot, TransformUsageFlags.Dynamic)
                 });
 
                 AddComponent<ReadPlayerInput>(entity);
@@ -34,11 +42,18 @@ namespace SV.BallGame
         }
     }
 
-    public struct BoardC : IComponentData
+    public struct ShipControllerDataC : IComponentData
     {
         public float moveSpeed;
 
     }
 
+    public struct ShipAnimationDataC : IComponentData
+    {
+        public Entity shipRoot;
+        public float shipMaxAnimRot;
+        public float rotSpeed;
 
+
+    }
 }
