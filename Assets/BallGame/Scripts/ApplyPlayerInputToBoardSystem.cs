@@ -1,36 +1,29 @@
 using Unity.Entities;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace SV.BallGame
 {
     public partial class ApplyPlayerInputToBoardSystem : SystemBase
     {
+        private PlayerControlls input;
+
+        protected override void OnCreate()
+        {
+            base.OnCreate();
+            input = new PlayerControlls();
+            input.Enable();
+        }
         protected override void OnUpdate()
         {
-            float horizontaMoveInput = 0;
-            float verticalMoveInput = 0;
-            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-            {
-                horizontaMoveInput = -1f;
-            }
-            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-            {
-                horizontaMoveInput = 1f;
-            }
-
-            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-            {
-                verticalMoveInput = 1f;
-            }
-            else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-            {
-                verticalMoveInput = -1f;
-            }
+        
+            var inputVec = input.Gameplay.Move.ReadValue<Vector2>();
+            
 
             foreach (var item in SystemAPI.Query<RefRW<ShipInputC>>().WithAll<ReadPlayerInput>())
             {
-                item.ValueRW.horizontaMoveInput = horizontaMoveInput;
-                item.ValueRW.verticalMoveInput = verticalMoveInput;
+                item.ValueRW.horizontaMoveInput = inputVec.x;
+                item.ValueRW.verticalMoveInput = inputVec.y;
             }
         }
     }

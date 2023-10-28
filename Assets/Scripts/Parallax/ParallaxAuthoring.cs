@@ -193,15 +193,20 @@ namespace Prototype.Parallax
 
         public void OnUpdate(ref SystemState state)
         {
-            var dletaTime = SystemAPI.Time.DeltaTime;
-
+          
             foreach (var (trans, factor, teleportData, speed) in SystemAPI.Query<RefRW<LocalTransform>, ParallaxObject, TeleportData, ParallaxSpeed>())
             {
                 var pos = trans.ValueRO.Position;
-                if (math.distancesq(pos, factor.prevTeleportPos) > teleportData.teleportDistance * teleportData.teleportDistance)
+
+                var diffX = pos.x - factor.prevTeleportPos.x;
+                var diffY = pos.y - factor.prevTeleportPos.y;
+                if (math.abs(diffX) > teleportData.teleportDistance)
                 {
-                    var vec = factor.prevTeleportPos - pos;
-                    trans.ValueRW.Position += vec;// teleportData.teleportOffset * math.sign(speed.Value);
+                    trans.ValueRW.Position.x -= diffX;                   
+                }
+             if (math.abs(diffY) > teleportData.teleportDistance)
+                {
+                    trans.ValueRW.Position.y -= diffY;
                 }
             }
         }
