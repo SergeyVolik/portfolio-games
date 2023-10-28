@@ -32,14 +32,25 @@ namespace Prototype.Parallax
                         Value = speed.Value
                     });
 
-                    ecb.AddComponent<ParallaxObject>(parallaxTempData.entity, new ParallaxObject
+                    ecb.AddComponent<ParallaxMoveVector>(parallaxTempData.entity, new ParallaxMoveVector
                     {
-                        startPos = SystemAPI.GetComponent<LocalTransform>(parallaxTempData.entity).Position,
-                        teleportOffset = parallaxTempData.teleportOffset,
-                        moveVector = parallaxTempData.moveVector,
-                        teleportDistance = parallaxTempData.teleportDistance
+                        Value = new Unity.Mathematics.float3(parallaxTempData.moveVector.x, parallaxTempData.moveVector.y, 0) 
                     });
 
+                    ecb.AddComponent<ParallaxObject>(parallaxTempData.entity, new ParallaxObject
+                    {
+                        prevTeleportPos = SystemAPI.GetComponent<LocalTransform>(parallaxTempData.entity).Position,
+                       
+                    });
+
+                    if (!parallaxTempData.disableTeleport)
+                    {
+                        ecb.AddComponent<TeleportData>(parallaxTempData.entity, new TeleportData
+                        {
+                            teleportOffset = parallaxTempData.teleportOffset,
+                            teleportDistance = parallaxTempData.teleportDistance
+                        });
+                    }
                 }
             }
 

@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
@@ -8,12 +9,8 @@ namespace Prototype.Parallax
     public enum OffsetType
     {
         None,
-        SpriteBased
-    }
-    public enum MoveMode
-    {
-        Horizontal,
-        Vertical,
+        SpriteRenderer,
+        Custom
     }
 
     [System.Serializable]
@@ -23,16 +20,20 @@ namespace Prototype.Parallax
         public GameObject obj;
         public float parallaxValue;
         public bool enable = true;
+
+        [ShowIf("@this.offsetType == OffsetType.Custom")]
         public float parallaxDistanceToTeleport;
-        public float3 teleportOffset;
-        public bool disableTeleport;
+        [ShowIf("@this.offsetType == OffsetType.Custom")]
+        public float teleportOffset;
     }
 
     [DisallowMultipleComponent]
     public class ParallaxAuthoring : MonoBehaviour
     {
+
         public float speed;
-        public Vector3 moveVector;
+        public Vector2 moveVector;
+
         public ParallaxObjData[] paralaxObjects;
 
         void OnEnable() { }
@@ -58,14 +59,35 @@ namespace Prototype.Parallax
                     if (parallaxObjE == Entity.Null)
                         continue;
 
+                    float teleportDistance = item.parallaxDistanceToTeleport;
+                    float teleportOffset = item.teleportOffset;
+
+                    if (item.offsetType == OffsetType.SpriteRenderer)
+                    {
+                        var sprite = item.obj.GetComponent<SpriteRenderer>();
+
+                        if (sprite != null)
+                        {
+                            teleportOffset = sprite.sprite.texture.height / sprite.sprite.pixelsPerUnit * sprite.transform.localScale.x;
+                            teleportDistance = teleportOffset;
+                        }
+                        else
+                        {
+                            Debug.LogError("SpriteRenderer doesn't exist!");
+                        }
+                    }
+
+
+
                     buffer.Add(new TempParallaxObjectsBuff
                     {
                         entity = parallaxObjE,
                         parallaxFactor = item.parallaxValue,
-                        moveVector = authoring.moveVector,
-                        teleportDistance = item.parallaxDistanceToTeleport,
+                        teleportDistance = teleportDistance,
                         enableParallax = item.enable,
-                        teleportOffset = item.teleportOffset,
+                        teleportOffset = teleportOffset,
+                        disableTeleport = item.offsetType == OffsetType.None,
+                         moveVector = authoring.moveVector
                     });
 
                     bufferObjects.Add(new ParallaxObjects
@@ -80,13 +102,18 @@ namespace Prototype.Parallax
                 {
                     Value = authoring.speed,
                 });
+
+                AddComponent(entity, new SetMoveVectorCommand
+                {
+                    Value = authoring.moveVector,
+                });
             }
         }
     }
 
     public struct ParallaxRoot : IComponentData
     {
-
+        public float2 moveVector;
     }
 
     [TemporaryBakingType]
@@ -95,10 +122,10 @@ namespace Prototype.Parallax
         public Entity entity;
         public float parallaxFactor;
         public float teleportDistance;
-        public float3 teleportOffset;
+        public float teleportOffset;
         public bool disableTeleport;
-        public float3 moveVector;
         public bool enableParallax;
+        public float2 moveVector;
     }
 
     public struct ParallaxObjects : IBufferElementData
@@ -108,9 +135,12 @@ namespace Prototype.Parallax
 
     public struct ParallaxObject : IComponentData
     {
-        public float3 startPos;
-        public float3 teleportOffset;
-        public float3 moveVector;
+        public float3 prevTeleportPos;
+    }
+
+    public struct TeleportData : IComponentData
+    {
+        public float teleportOffset;
         public float teleportDistance;
     }
 
@@ -124,9 +154,19 @@ namespace Prototype.Parallax
         public float Value;
     }
 
+    public struct SetMoveVectorCommand : IComponentData, IEnableableComponent
+    {
+        public float2 Value;
+    }
+
     public struct ParallaxSpeed : IComponentData
     {
         public float Value;
+    }
+
+    public struct ParallaxMoveVector : IComponentData
+    {
+        public float3 Value;
     }
 
     [UpdateInGroup(typeof(ParallaxSystemGroup))]
@@ -138,9 +178,9 @@ namespace Prototype.Parallax
         {
             var dletaTime = SystemAPI.Time.DeltaTime;
 
-            foreach (var (trans, factor, speed, obj) in SystemAPI.Query<RefRW<LocalTransform>, ParallaxFactor, ParallaxSpeed, RefRO<ParallaxObject>>())
+            foreach (var (trans, factor, speed, moveVector) in SystemAPI.Query<RefRW<LocalTransform>, ParallaxFactor, ParallaxSpeed, ParallaxMoveVector>())
             {
-                trans.ValueRW.Position += obj.ValueRO.moveVector * dletaTime * factor.Value * speed.Value;
+                trans.ValueRW.Position +=  dletaTime * factor.Value * -speed.Value * math.normalizesafe(moveVector.Value);
             }
         }
     }
@@ -155,12 +195,13 @@ namespace Prototype.Parallax
         {
             var dletaTime = SystemAPI.Time.DeltaTime;
 
-            foreach (var (trans, factor, speed) in SystemAPI.Query<RefRW<LocalTransform>, ParallaxObject, ParallaxSpeed>())
+            foreach (var (trans, factor, teleportData, speed) in SystemAPI.Query<RefRW<LocalTransform>, ParallaxObject, TeleportData, ParallaxSpeed>())
             {
                 var pos = trans.ValueRO.Position;
-                if (math.distancesq(pos, factor.startPos) > factor.teleportDistance * factor.teleportDistance)
+                if (math.distancesq(pos, factor.prevTeleportPos) > teleportData.teleportDistance * teleportData.teleportDistance)
                 {
-                    trans.ValueRW.Position += factor.teleportOffset * math.sign(speed.Value);
+                    var vec = factor.prevTeleportPos - pos;
+                    trans.ValueRW.Position += vec;// teleportData.teleportOffset * math.sign(speed.Value);
                 }
             }
         }
