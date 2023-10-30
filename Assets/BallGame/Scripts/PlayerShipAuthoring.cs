@@ -1,3 +1,5 @@
+using Prototype;
+using Prototype.ProjectileSpawner;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Entities;
@@ -26,34 +28,36 @@ namespace SV.BallGame
 
                 AddComponent(entity, new ShipControllerDataC
                 {
-                    moveSpeed = authoring.moveSpeed
-                });
-                AddComponent(entity, new ShipAnimationDataC
-                {
-                    rotSpeed = authoring.rotSpeed,
-                    shipMaxAnimRot = authoring.shipMaxAnimRot,
-                    shipRoot = GetEntity(authoring.shipRoot, TransformUsageFlags.Dynamic)
+                    moveSpeed = authoring.moveSpeed,
+                    rotationSpeed = authoring.rotSpeed
                 });
 
                 AddComponent<ReadPlayerInput>(entity);
                 AddComponent<ShipInputC>(entity);
 
+                var guns = GetComponentsInChildren<ProjectileSpawnerAuthoring>();
+
+                var buffer = AddBuffer<ShipGunsBuff>(entity);
+
+                foreach (var gunsBuff in guns)
+                {
+                    buffer.Add(new ShipGunsBuff
+                    {
+                        gun = GetEntity(gunsBuff, TransformUsageFlags.Dynamic)
+                    });
+                }
             }
         }
+    }
+
+    public struct ShipGunsBuff : IBufferElementData
+    {
+        public Entity gun;
     }
 
     public struct ShipControllerDataC : IComponentData
     {
         public float moveSpeed;
-
-    }
-
-    public struct ShipAnimationDataC : IComponentData
-    {
-        public Entity shipRoot;
-        public float shipMaxAnimRot;
-        public float rotSpeed;
-
-
+        public float rotationSpeed;
     }
 }

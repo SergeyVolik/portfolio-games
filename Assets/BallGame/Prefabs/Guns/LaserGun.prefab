@@ -86,7 +86,7 @@ MonoBehaviour:
   delayType: 1
   projectileLifetime: 1
   delayBetweenShots: 0.2
-  projectileSpeed: 100
+  projectileSpeed: 200
   twoDimMode: 0
   damage: 10
   projectiles: 1
