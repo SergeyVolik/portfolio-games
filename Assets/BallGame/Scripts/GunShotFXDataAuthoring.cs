@@ -45,10 +45,17 @@ namespace SV.BallGame
     {
         protected override void OnUpdate()
         {
-            foreach (var (data, worldMat) in SystemAPI.Query<GunShotFXDataC, LocalToWorld>().WithAll<ExecuteProjectileSpawn>().WithChangeFilter<ExecuteProjectileSpawn>())
+            var ecb = SystemAPI.GetSingleton<EndSimulationEntityCommandBufferSystem.Singleton>().CreateCommandBuffer(World.Unmanaged);
+            foreach (var data in SystemAPI.Query<GunShotFXDataC>().WithAll<ExecuteProjectileSpawn>().WithChangeFilter<ExecuteProjectileSpawn>())
             {
-                data.sfx?.Play();
-
+                if (data.sfx)
+                {
+                    var playE = ecb.CreateEntity();
+                    ecb.AddComponent<PlaySFXCommandC>(playE, new PlaySFXCommandC
+                    {
+                        sfxSettingGuid = data.sfx.guid
+                    });
+                }
                 if (SystemAPI.HasComponent<PlayC>(data.particleEffect))
                 {
                     SystemAPI.SetComponentEnabled<PlayC>(data.particleEffect, true);

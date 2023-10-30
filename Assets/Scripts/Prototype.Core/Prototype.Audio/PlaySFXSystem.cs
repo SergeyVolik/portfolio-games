@@ -52,14 +52,21 @@ namespace Prototype.Audio
 
         public void OnUpdate(ref SystemState state)
         {
+            var audioManager = AudioManager.GetInstance();
+
+            if (audioManager == null)
+            {
+                return;
+            }
+
             var ecb = SystemAPI.GetSingleton<EndSimulationEntityCommandBufferSystem.Singleton>().CreateCommandBuffer(state.WorldUnmanaged);
             var sfxdatabase = SystemAPI.ManagedAPI.GetSingleton<SFXDatabaseComponent>().value;
 
             NativeHashSet<PlaySFXCommandC> playerdSfxes = new NativeHashSet<PlaySFXCommandC>(0, Allocator.Temp);
 
             var time = (float)SystemAPI.Time.ElapsedTime;
-
-            foreach (var (sfx, e) in SystemAPI.Query<PlaySFXCommandC>().WithEntityAccess())
+          
+            foreach (var sfx in SystemAPI.Query<PlaySFXCommandC>())
             {
                 if (sfx.playTime > time)
                 {
@@ -68,15 +75,13 @@ namespace Prototype.Audio
 
                 if (!playerdSfxes.Contains(sfx))
                 {
-                    AudioManager.GetInstance().PlaySFX(sfxdatabase.GetItem(sfx.sfxSettingGuid));
+                    audioManager.PlaySFX(sfxdatabase.GetItem(sfx.sfxSettingGuid));
 
-                    playerdSfxes.Add(sfx);
-
-                   
-                }
-
-                ecb.DestroyEntity(e);
+                    playerdSfxes.Add(sfx);    
+                }    
             }
+
+            ecb.DestroyEntity(playSFXQuery, EntityQueryCaptureMode.AtPlayback);
         }
     }
 }

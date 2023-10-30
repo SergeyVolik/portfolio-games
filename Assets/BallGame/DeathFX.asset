@@ -17,5 +17,6 @@ MonoBehaviour:
     Hash: 4661efbf316155244a8e965cd9ff4b05
   volumeRange: {x: 0.5357201, y: 0.7024685}
   pinch: {x: 0.807095, y: 1}
-  clip: {fileID: 8300000, guid: 17daa3f1d6ca00e43826644c329e4ee9, type: 3}
+  clips:
+  - {fileID: 8300000, guid: 17daa3f1d6ca00e43826644c329e4ee9, type: 3}
   mixer: {fileID: 1554150752040198610, guid: 0a65b20ff05d53a48b7c19b082fbc0e1, type: 2}

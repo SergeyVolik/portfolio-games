@@ -17,7 +17,8 @@ namespace Prototype.Audio
         [MinMaxSlider(0, 1)]
         public Vector2 pinch = new Vector2(1, 1);
 
-        public AudioClip clip;
+        public AudioClip[] clips;
+
         public AudioMixerGroup mixer;
 
         /// <summary>
@@ -26,7 +27,10 @@ namespace Prototype.Audio
         /// <param name="source"></param>
         public void Play(AudioSource source)
         {
-            source.clip = clip;
+            if (clips.Length == 0)
+                return;
+
+            source.clip = clips[UnityEngine.Random.Range(0, clips.Length)];
             source.volume = UnityEngine.Random.Range(volumeRange.x, volumeRange.y);
             source.pitch = UnityEngine.Random.Range(pinch.x, pinch.y);
 
