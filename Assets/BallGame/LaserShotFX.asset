@@ -15,9 +15,8 @@ MonoBehaviour:
   guid:
     serializedVersion: 2
     Hash: 0c29a22c3532e39428efbfbfd1f38f31
-  volumeRange: {x: 0.10740561, y: 0.1793363}
+  volumeRange: {x: 0.025666196, y: 0.048553232}
   pinch: {x: 0.5716855, y: 0.79401666}
   clips:
   - {fileID: 8300000, guid: dfa6a1b3bd3b8e243a39a0bc062dfd82, type: 3}
-  - {fileID: 8300000, guid: df150a13a66c15e478bca1b521dc11f3, type: 3}
   mixer: {fileID: 1554150752040198610, guid: 0a65b20ff05d53a48b7c19b082fbc0e1, type: 2}
