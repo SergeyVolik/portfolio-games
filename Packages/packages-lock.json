@@ -10,6 +10,33 @@
       },
       "hash": "b3035ea52382e766ee578d8a9b223c2a1de9ddad"
     },
+    "com.sergeyvolik.prototype.heathsystem": {
+      "version": "git@github.com:SergeyVolik/prototype.heathsystem.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.entities": "1.0.16",
+        "com.unity.burst": "1.8.8"
+      },
+      "hash": "95b2e136dfee2abc6db2bd5351b95b6727e75406"
+    },
+    "com.sergeyvolik.prototype.projectilespawner": {
+      "version": "file:E:/UnityProjects/prototype.projectilespawner",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.entities": ""
+      }
+    },
+    "com.sv.parallax": {
+      "version": "file:E:/UnityProjects/ECSParallax",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.entities": "1.0.16",
+        "com.unity.burst": "1.8.8"
+      }
+    },
     "com.unity.burst": {
       "version": "1.8.8",
       "depth": 1,
@@ -267,6 +294,18 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "prototype.core": {
+      "version": "file:E:/UnityProjects/Prototype.Core",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.entities": "1.0.16",
+        "com.unity.burst": "1.8.8",
+        "com.unity.physics": "1.0.16",
+        "com.unity.entities.graphics": "1.0.16",
+        "com.dots.dispatcher": "https://github.com/116370/com.dots.dispatcher"
+      }
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

@@ -41,8 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7627008624559938774}
   - component: {fileID: 4962603760104780269}
-  - component: {fileID: 5896836186664925472}
   - component: {fileID: 1902508630461487672}
+  - component: {fileID: 2688413838274110365}
   m_Layer: 0
   m_Name: LaserGun
   m_TagString: Untagged
@@ -95,19 +95,6 @@ MonoBehaviour:
   burstSpawnDelays: 0.1
   burstSpawns: 2
   ativeAtStart: 1
---- !u!114 &5896836186664925472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6083906342071247419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f220dc79a7882b4688c8dcc2eb7e033, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: {fileID: 0}
 --- !u!114 &1902508630461487672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +108,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 356843951291233405}
-  sfx: {fileID: 11400000, guid: 0c29a22c3532e39428efbfbfd1f38f31, type: 2}
+  sfx: {fileID: 11400000, guid: 9260a00ba5430e84bb2ed26ba4dd69be, type: 2}
+--- !u!114 &2688413838274110365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6083906342071247419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c0af1093a4ffc347875ce610d18f39f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: {fileID: 0}
 --- !u!1001 &1671586064204675692
 PrefabInstance:
   m_ObjectHideFlags: 0

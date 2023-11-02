@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "com.dots.dispatcher": "git@github.com:116370/com.dots.dispatcher.git",
+    "com.sergeyvolik.prototype.heathsystem": "git@github.com:SergeyVolik/prototype.heathsystem.git",
+    "com.sergeyvolik.prototype.projectilespawner": "file:E:/UnityProjects/prototype.projectilespawner",
+    "com.sv.parallax": "file:E:/UnityProjects/ECSParallax",
     "com.unity.cinemachine": "2.9.7",
     "com.unity.collab-proxy": "2.0.7",
     "com.unity.entities": "1.0.16",
@@ -16,6 +19,7 @@
     "com.unity.timeline": "1.7.5",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.9.0",
+    "prototype.core": "file:E:/UnityProjects/Prototype.Core",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

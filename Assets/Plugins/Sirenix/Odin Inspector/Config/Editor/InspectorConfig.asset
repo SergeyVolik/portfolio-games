@@ -16,4 +16,10 @@ MonoBehaviour:
   defaultEditorBehaviour: 11
   processMouseMoveInInspector: 1
   drawingConfig:
-    configs: []
+    configs:
+    - DrawnTypeName: Prototype.Audio.AudioSFX, Prototype.Core.Audio
+      EditorTypeName: 
+    - DrawnTypeName: PrefabRefSO, TestPrefabLoad
+      EditorTypeName: 
+    - DrawnTypeName: TestRefSO, TestPrefabLoad
+      EditorTypeName: 

@@ -9,7 +9,6 @@ using UnityEngine;
 namespace SV.BallGame
 {
 
-
     [DisallowMultipleComponent]
     public class AsteroidSpawnerAuthoring : MonoBehaviour
     {
@@ -119,8 +118,6 @@ namespace SV.BallGame
 
                 float3 vector = math.normalize(targetPos - pos);
                 var size = rnd.NextFloat(item.asteroidSizeRange.x, item.asteroidSizeRange.y);
-
-               
 
                 var localTransform = LocalTransform.FromPositionRotationScale(pos, quaternion.identity, size);
                

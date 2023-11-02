@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pool: {fileID: 11400000, guid: 69ee2928198f76043894e5495e1522e4, type: 2}
-  sfx: {fileID: 11400000, guid: 4661efbf316155244a8e965cd9ff4b05, type: 2}
+  sfx: {fileID: 11400000, guid: a146670c503ecca46a7b2ad3ccab355b, type: 2}
 --- !u!114 &2473991640623156169
 MonoBehaviour:
   m_ObjectHideFlags: 0

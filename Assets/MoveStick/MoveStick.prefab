@@ -282,8 +282,6 @@ GameObject:
   - component: {fileID: 2462007778444411079}
   - component: {fileID: 1176228884395710451}
   - component: {fileID: 5211638511386017768}
-  - component: {fileID: 2221343653183081006}
-  - component: {fileID: 6892681918180837964}
   m_Layer: 5
   m_Name: StickHandle
   m_TagString: Untagged
@@ -331,7 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -399,34 +397,8 @@ MonoBehaviour:
   - {fileID: 6730200101999209020}
   - {fileID: 6018749206742667921}
   stickBG: {fileID: 913225721488200279}
---- !u!114 &2221343653183081006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3234193440018626754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe7b1492a0fb5804199e14ba4586f51b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  from: {fileID: 913225721488200279}
-  to: {fileID: 7676790401401023720}
---- !u!114 &6892681918180837964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3234193440018626754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe7b1492a0fb5804199e14ba4586f51b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  from: {fileID: 2564509065888479879}
-  to: {fileID: 2316246654222068327}
+  renderHandle: {fileID: 2316246654222068327}
+  renderBG: {fileID: 7676790401401023720}
 --- !u!1 &3279192942151867437
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5529412}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

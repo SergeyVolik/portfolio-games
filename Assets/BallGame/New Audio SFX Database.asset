@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f10448250364e404a938734ea7adec32, type: 3}
+  m_Script: {fileID: 11500000, guid: f8fa3cd368b2f4b458b6aa0243501965, type: 3}
   m_Name: New Audio SFX Database
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 11400000, guid: 4661efbf316155244a8e965cd9ff4b05, type: 2}
-  - {fileID: 11400000, guid: 0c29a22c3532e39428efbfbfd1f38f31, type: 2}
+  items: []
